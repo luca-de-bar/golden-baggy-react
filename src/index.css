@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aggiungi stili personalizzati se necessario */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 38s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  width: 85%; /* La larghezza del testo è l'85% della larghezza della striscia informativa */
+  padding-left: 100%;
+  animation: marquee 38s linear infinite; /* 35s durata animazione + 3s pausa */
+}
