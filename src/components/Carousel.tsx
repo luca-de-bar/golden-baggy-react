@@ -13,7 +13,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Cambia immagine ogni 3 secondi
+    }, 5000); // Cambia immagine ogni 5 secondi
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -42,11 +42,11 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full">
-      <div className="relative h-64 sm:h-96 lg:h-128 overflow-hidden">
+      <div className="relative h-64 sm:h-96 lg:h-128 overflow-hidden flex items-center justify-center">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'} flex items-center justify-center`}
           >
             <img src={image} alt={`carousel slide ${index}`} className="w-full h-full object-cover" />
           </div>
