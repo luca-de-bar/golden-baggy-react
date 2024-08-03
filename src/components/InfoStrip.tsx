@@ -6,7 +6,7 @@ const InfoStrip = () => {
       <div className="marquee-container">
         <div className="marquee whitespace-nowrap">
           <span className="mx-4 sm:mx-8 md:mx-12">
-            Welcome to our e-commerce store! Enjoy free shipping on orders over $50!
+            Welcome to goldenbaggy! Enjoy free shipping on orders over $50!
           </span>
         </div>
       </div>
