@@ -1,6 +1,6 @@
-import * as React from "react"
+//This component is used to display the available items on the shop at this moment. Do NOT display the MainItem :)
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-const words = ["Word1", "Word2", "Word3", "Word4", "Word5", "Word6", "Word7"]
+const words = ["Arise V2", "Phoenix", "Dark Matter", "Vanity", "Pegasus", "Acedia", "Envy"]
 
 export function CarouselSize() {
   return (
@@ -33,10 +33,8 @@ export function CarouselSize() {
               </Card>
               <div className="p-4 flex flex-col justify-between items-center">
                 <h3 className="text-xl font-medium mb-2">{words[index % words.length]}</h3>
-                <button type="button" className="bg-slate-950 py-2 font-semibold text-white hover:bg-slate-500 flex justify-between gap-3 rounded-md">Carrello
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                  </svg>
+                <button type="button" className="bg-slate-950 py-2 px-5 font-semibold text-white hover:bg-slate-600 transition-all flex justify-between gap-3 rounded-md">
+                  + Dettagli
                 </button>
               </div>
             </CarouselItem>
