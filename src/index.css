@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Aggiungi stili personalizzati se necessario */
+
+
+/* INFO STRIP CSS */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
