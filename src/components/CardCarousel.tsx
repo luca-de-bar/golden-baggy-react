@@ -1,5 +1,6 @@
 //This component is used to display the available items on the shop at this moment. Do NOT display the MainItem :)
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
 
 import {
   Carousel,
@@ -32,10 +33,8 @@ export function CarouselSize() {
                 </CardContent>
               </Card>
               <div className="p-4 flex flex-col justify-between items-center">
-                <h3 className="text-xl font-medium mb-2">{words[index % words.length]}</h3>
-                <button type="button" className="bg-slate-950 py-2 px-5 font-semibold text-white hover:bg-slate-600 transition-all flex justify-between gap-3 rounded-md">
-                  + Dettagli
-                </button>
+                <h3 className="text-xl font-medium mb-2 text-center">{words[index % words.length]}</h3>
+                <Button variant="outline" className='btn btnshop'>+ Scopri</Button>
               </div>
             </CarouselItem>
           ))}
