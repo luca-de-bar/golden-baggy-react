@@ -29,10 +29,10 @@ const CardCarousel: React.FC = () => (
       className="w-full max-w-7xl px-4"
     >
       <CarouselContent className="flex">
-        {Array.from({ length: 10 }).map((_, index) => (
+        {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem 
             key={index} 
-            className="basis-1/2 sm:basis-1/4 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 p-2"
+            className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/5 p-2"
           >
             <Card>
               <CardContent className="flex aspect-square items-center justify-center p-4 sm:p-6">
