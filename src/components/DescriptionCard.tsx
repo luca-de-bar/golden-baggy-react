@@ -10,7 +10,7 @@ const DescriptionCard: React.FC = () => {
         {/* Description Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex flex-col justify-center items-center p-6">
           <h3 className="text-2xl font-semibold text-white mb-4">Card Title</h3>
-          <p className="text-white text-center">This is a brief description that goes inside the card. It provides an overview or key details.</p>
+          <p className="text-white text-center">Brief Description of golden baggy brand</p>
         </div>
       </div>
     </div>
