@@ -7,6 +7,7 @@ import DescriptionCard from "./components/DescriptionCard";
 import InfoStrip from "./components/InfoStrip";
 import { CarouselSize } from "./components/CardCarousel";
 import MainItem from "./components/MainItem";
+import SingleCard from "./components/SingleCard";
 import "./index.css";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <DescriptionCard />
       <MainItem />
       <CarouselSize />
+      <SingleCard />
     </div>
   );
 };
