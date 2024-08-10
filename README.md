@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Golden Baggy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What I Used:
+- **Components:** The project primarily utilizes components from [Shadcn UI](https://ui.shadcn.com/), a collection of React components. Some components, like `InfoStrip.tsx`, have been custom-made specifically for this project.
+- **Front-end Development Server:** The project is built using Vite with React and TypeScript.
+- **Front-end Framework:** Tailwind CSS is used as the styling framework, which is also the base framework for Shadcn UI.
 
-Currently, two official plugins are available:
+## Project Structure:
+The project is organized as follows:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+├── node_modules/ # Project dependencies
+├── public/ # Public assets such as images and other files used on the website
+│ └── ...
+├── src/ # Source code for the website
+│ ├── components/ # React components used throughout the website
+│ │ ├── ui/ # Shadcn UI components
+│ │ └── ... # Custom components (e.g., InfoStrip.tsx)
+│ ├── App.tsx # Main application component
+│ ├── main.tsx # Entry point for the React application
+│ ├── index.css # Global CSS styles
+│ ├── reset.css # CSS reset to standardize styles across browsers
+│ └── ...
+└── ...
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Explanation:
+- **node_modules:** Contains all the npm dependencies required by the project.
+- **public:** A directory where you can place static assets such as images, icons, and other files that need to be accessible by the browser.
+- **src:** The main source code for the project. This includes:
+  - **components:** A directory that houses all the reusable React components. Within this directory:
+    - **ui:** Contains components provided by Shadcn UI.
+    - Other folders or files represent custom components built specifically for this project.
+  - **App.tsx:** The root component that integrates all other components and renders the application.
+  - **main.tsx:** The entry point for the React application where the rendering process begins.
+  - **index.css:** Global styles that apply across the entire application.
+  - **reset.css:** Ensures consistent styling across different browsers by resetting default CSS properties.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Feel free to explore each directory and file to understand the structure and functionality better.
