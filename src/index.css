@@ -1,15 +1,14 @@
-@import './reset.css';
+@import "./reset.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body, html {
+body,
+html {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 
 /* INFO STRIP CSS */
 @keyframes marquee {
@@ -41,14 +40,12 @@ body, html {
 
 /* BTN CLASS */
 
-.btn
-{
+.btn {
   padding: 0px 15px;
   font-weight: bold;
 }
 
-.btn:hover
-{
+.btn:hover {
   background-color: #026372;
   color: #e2e8f0;
 }
