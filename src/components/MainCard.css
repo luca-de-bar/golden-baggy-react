@@ -1,4 +1,4 @@
-/* MainItem.css */
+/* MainCard.css */
 .zoom-container {
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transform: scale(0.8);

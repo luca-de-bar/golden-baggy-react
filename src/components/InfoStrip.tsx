@@ -1,5 +1,3 @@
-import React from "react";
-
 const InfoStrip = () => {
   return (
     <div className="bg-slate-950 text-white py-2 overflow-hidden">

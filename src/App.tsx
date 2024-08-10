@@ -6,7 +6,7 @@ import VideoPlayer from "./components/VideoPlayer";
 import DescriptionCard from "./components/DescriptionCard";
 import InfoStrip from "./components/InfoStrip";
 import { CarouselSize } from "./components/CardCarousel";
-import MainItem from "./components/MainItem";
+import MainCard from "./components/MainCard";
 import SingleCard from "./components/SingleCard";
 import "./index.css";
 
@@ -19,7 +19,7 @@ const App = () => {
       <VideoPlayer />
       <InfoStrip />
       <DescriptionCard />
-      <MainItem />
+      <MainCard />
       <CarouselSize />
       <SingleCard />
     </div>

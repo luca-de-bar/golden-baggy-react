@@ -29,7 +29,7 @@ const CardCarousel: React.FC = () => (
   </div>
 );
 
-const MainItem: React.FC = () => {
+const MainCard: React.FC = () => {
   return (
     <div className="flex flex-col items-center mt-8">
       <div className="w-full max-w-xs p-4 bg-white shadow-lg rounded-lg h-96 shadow-black/50">
@@ -72,4 +72,4 @@ const MainItem: React.FC = () => {
   );
 };
 
-export default MainItem;
+export default MainCard;
