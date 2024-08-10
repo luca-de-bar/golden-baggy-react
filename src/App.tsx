@@ -15,6 +15,7 @@ import InfoSection from "./components/InfoSection";
   /* import PromoSection from "./components/PromoSection"; */
 }
 import GetExclusive from "./components/GetExclusive";
+import NewsletterCTA from "./components/Newsletter";
 import Footer from "./components/Footer";
 import "./index.css";
 
@@ -33,6 +34,7 @@ const App = () => {
       <CardCarousel />
       {/*<SingleCard /> */}
       {/*<PromoSection /> */}
+      <NewsletterCTA />
       <Footer />
     </div>
   );
