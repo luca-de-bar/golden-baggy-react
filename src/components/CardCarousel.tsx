@@ -11,7 +11,7 @@ export function CardCarousel() {
         opts={{
           align: "start",
         }}
-        className="w-full"
+        className="w-full max-w-[110rem]"
       >
         <CarouselContent className="flex">
           {Array.from({ length: 15 }).map((_, index) => (
