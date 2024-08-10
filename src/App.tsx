@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import VideoPlayer from "./components/VideoPlayer";
 import DescriptionCard from "./components/DescriptionCard";
 import InfoStrip from "./components/InfoStrip";
-import { CarouselSize } from "./components/CardCarousel";
+import { CardCarousel } from "./components/CardCarousel";
 import MainCard from "./components/MainCard";
 {
   /*import SingleCard from "./components/SingleCard";*/
@@ -24,9 +24,9 @@ const App = () => {
       <InfoStrip />
       <DescriptionCard />
       <MainCard />
-      <CarouselSize />
-      {/*<SingleCard /> */}
       <InfoSection />
+      <CardCarousel />
+      {/*<SingleCard /> */}
       <Footer />
     </div>
   );

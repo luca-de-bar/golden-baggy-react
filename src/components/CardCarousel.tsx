@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import "./CardCarousel.css";
 
-{/*Change the cards title here*/}
+{
+  /*Change the cards title here*/
+}
 const words = ["Arise V2", "Phoenix", "Dark Matter", "Vanity", "Pegasus", "Acedia", "Envy"];
 
-export function CarouselSize() {
+export function CardCarousel() {
   return (
-    <div className="flex justify-center mt-8 relative">
+    <div className="flex justify-center my-16 relative">
       <Carousel
         opts={{
           align: "start",
@@ -33,8 +35,8 @@ export function CarouselSize() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute z-20 left-0 top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-gray-100 text-black flex items-center justify-center" />
-        <CarouselNext className="absolute z-20 right-0 top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-gray-100 text-black flex items-center justify-center" />
+        <CarouselPrevious className="absolute z-20 left-20px top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-gray-100 text-black flex items-center justify-center" />
+        <CarouselNext className="absolute z-20 right-20px top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-gray-100 text-black flex items-center justify-center" />
       </Carousel>
     </div>
   );

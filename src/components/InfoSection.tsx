@@ -2,7 +2,7 @@ import React from "react";
 
 const InfoSection: React.FC = () => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-gray-100 py-12 my-16">
       <div className="container mx-auto px-4">
         {/* Desktop and Tablet Section */}
         <div className="hidden lg:grid lg:grid-cols-2 lg:gap-8">
