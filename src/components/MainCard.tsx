@@ -23,8 +23,8 @@ const CardCarousel: React.FC = () => (
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute z-20 left-0 top-[calc(57.5%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-gray-100 text-black flex items-center justify-center" />
-      <CarouselNext className="absolute z-20 right-0 top-[calc(57.5%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-gray-100 text-black flex items-center justify-center" />
+      <CarouselPrevious className="absolute z-20 left-0 top-[calc(57.5%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-slate-950 hover:text-white text-black flex items-center justify-center" />
+      <CarouselNext className="absolute z-20 right-0 top-[calc(57.5%-20px)] transform -translate-y-1/2 bg-white rounded-full p-3 w-12 h-12 text-3xl shadow-lg hover:bg-slate-950 hover:text-white text-black flex items-center justify-center" />
     </Carousel>
   </div>
 );

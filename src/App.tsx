@@ -11,7 +11,9 @@ import Navbar from "./components/Navbar";
 import InfoStrip from "./components/InfoStrip";
 import { CardCarousel } from "./components/CardCarousel";
 import MainCard from "./components/MainCard";
-import Cart from "./components/Cart";
+{
+  /*import Cart from "./components/Cart"; */
+}
 
 {
   /*import SingleCard from "./components/SingleCard";*/
@@ -30,8 +32,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      {/*<Carousel />*/
-      /* Can choose if you want to use this instead of VideoPlayer but please DO NOT use them both on the homepage.*/}
+      {/*<Carousel />*/}
       <HeroBanner />
       {/*<VideoPlayer /> */}
       <InfoStrip />
@@ -44,7 +45,7 @@ const App = () => {
       {/*<PromoSection /> */}
       <NewsletterCTA />
       <Footer />
-      <Cart />
+      {/*<Cart />*/}
     </div>
   );
 };

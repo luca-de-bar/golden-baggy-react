@@ -30,8 +30,8 @@ export function CardCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute z-20 left-0 sm:left-[5px] md:left-[10px] lg:left-[20px] top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-slate-900 rounded-full p-1 w-12 h-12 text-4xl shadow-lg hover:bg-gray-100 hover:text-slate-900 text-white flex items-center justify-center" />
-        <CarouselNext className="absolute z-20 right-0 sm:right-[5px] md:right-[10px] lg:right-[20px] top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-slate-900 rounded-full p-1 w-12 h-12 text-4xl shadow-lg hover:bg-gray-100 hover:text-slate-900 text-white flex items-center justify-center" />
+        <CarouselPrevious className="absolute z-20 left-0 sm:left-[5px] md:left-[10px] lg:left-[20px] top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-slate-100 rounded-full p-1 w-12 h-12 text-4xl shadow-lg hover:bg-slate-950 hover:text-white text-black flex items-center justify-center" />
+        <CarouselNext className="absolute z-20 right-0 sm:right-[5px] md:right-[10px] lg:right-[20px] top-[calc(42.1%-20px)] transform -translate-y-1/2 bg-slate-100 rounded-full p-1 w-12 h-12 text-4xl shadow-lg hover:bg-slate-950 hover:text-white text-black flex items-center justify-center" />
       </Carousel>
     </div>
   );

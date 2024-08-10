@@ -11,13 +11,6 @@ const InfoSection: React.FC = () => {
             <h2 className="text-xl font-semibold mb-4">Title 1</h2>
             <p className="text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis
-              <strong>
-                <em>
-                  <a href="#" className="text-blue-500 hover:underline">
-                    Link for CTA
-                  </a>
-                </em>
-              </strong>
             </p>
           </div>
           <div>
@@ -31,11 +24,11 @@ const InfoSection: React.FC = () => {
           <div className="flex flex-col justify-center">
             <h2 className="text-xl font-semibold mb-4">Rimani con noi!</h2>
             <p className="text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis...
               <strong>
                 <em>
                   <a href="#" className="text-blue-500 hover:underline">
-                    Scopri di più
+                    Show more
                   </a>
                 </em>
               </strong>
@@ -46,16 +39,9 @@ const InfoSection: React.FC = () => {
         {/* Tablet Section */}
         <div className="hidden md:grid md:grid-cols-2 lg:hidden gap-8">
           <div className="md:col-span-2 flex flex-col items-center">
-            <h2 className="text-xl font-semibold mb-4">Ci presentiamo...</h2>
+            <h2 className="text-xl font-semibold mb-4">Title 1</h2>
             <p className="text-base text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis.
-              <strong>
-                <em>
-                  <a href="#" className="text-blue-500 hover:underline">
-                    Scopri di più
-                  </a>
-                </em>
-              </strong>
             </p>
           </div>
           <div>
@@ -65,13 +51,13 @@ const InfoSection: React.FC = () => {
             <img src="https://via.placeholder.com/570x370" alt="Seconda immagine" className="w-full h-auto max-h-96 object-cover rounded-lg" />
           </div>
           <div className="md:col-span-2 flex flex-col items-center">
-            <h2 className="text-xl font-semibold mb-4">Rimani con noi!</h2>
+            <h2 className="text-xl font-semibold mb-4">Title 2</h2>
             <p className="text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis...
               <strong>
                 <em>
                   <a href="#" className="text-blue-500 hover:underline">
-                    Scopri di più
+                    Show more
                   </a>
                 </em>
               </strong>
@@ -82,16 +68,9 @@ const InfoSection: React.FC = () => {
         {/* Mobile Section */}
         <div className="lg:hidden md:hidden flex flex-col items-center space-y-8">
           <div className="w-full flex flex-col items-center">
-            <h2 className="text-xl font-semibold mb-4">Title1</h2>
+            <h2 className="text-xl font-semibold mb-4">Title 1</h2>
             <p className="text-base text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis.
-              <strong>
-                <em>
-                  <a href="#" className="text-blue-500 hover:underline">
-                    Scopri di più
-                  </a>
-                </em>
-              </strong>
             </p>
           </div>
           <div>
@@ -100,11 +79,11 @@ const InfoSection: React.FC = () => {
           <div className="w-full flex flex-col items-center">
             <h2 className="text-xl font-semibold mb-4">Title 2</h2>
             <p className="text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis...
               <strong>
                 <em>
                   <a href="#" className="text-blue-500 hover:underline">
-                    Scopri di più
+                    Show more
                   </a>
                 </em>
               </strong>
