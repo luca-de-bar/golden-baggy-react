@@ -58,7 +58,7 @@ const MainItem: React.FC = () => {
         <h3 className="text-xl font-medium mb-2">ARISE</h3>
         <Drawer>
           <DrawerTrigger asChild>
-            <Button variant="outline" className='btn btnshop'>+ Dettagli</Button>
+            <Button variant="outline" className='btn btnshop'>Preorder</Button>
           </DrawerTrigger>
           <DrawerContent className="bg-black text-white"> {/* Drawer with black background */}
             <div className='flex flex-col justify-center items-center'>

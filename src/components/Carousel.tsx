@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+
 const images = [
   'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'https://plus.unsplash.com/premium_photo-1708110920881-635419c3411f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -9,32 +10,30 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
+  const nextSlide = useCallback(() => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setIsAnimating(false);
+    }, 500);
+  }, [isAnimating]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Cambia immagine ogni 5 secondi
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [nextSlide]);
 
   const prevSlide = () => {
     if (isAnimating) return;
     setIsAnimating(true);
-    setTimeout(() => {
-      const isFirstSlide = currentIndex === 0;
-      const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-      setCurrentIndex(newIndex);
-      setIsAnimating(false);
-    }, 500); // Durata della transizione
-  };
 
-  const nextSlide = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
     setTimeout(() => {
-      const isLastSlide = currentIndex === images.length - 1;
-      const newIndex = isLastSlide ? 0 : currentIndex + 1;
-      setCurrentIndex(newIndex);
+      setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
       setIsAnimating(false);
     }, 500); // Durata della transizione
   };
