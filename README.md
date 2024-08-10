@@ -8,17 +8,18 @@
 ## Project Structure:
 The project is organized as follows:
 
-├── node_modules/ # Project dependencies
-├── public/ # Public assets such as images and other files used on the website
+Golden Baggy/
+├── node_modules/
+├── public/
 │ └── ...
-├── src/ # Source code for the website
-│ ├── components/ # React components used throughout the website
-│ │ ├── ui/ # Shadcn UI components
-│ │ └── ... # Custom components (e.g., InfoStrip.tsx)
-│ ├── App.tsx # Main application component
-│ ├── main.tsx # Entry point for the React application
-│ ├── index.css # Global CSS styles
-│ ├── reset.css # CSS reset to standardize styles across browsers
+├── src/
+│ ├── components/
+│ │ ├── ui/
+│ │ └── ...
+│ ├── App.tsx
+│ ├── main.tsx
+│ ├── index.css
+│ ├── reset.css
 │ └── ...
 └── ...
 
