@@ -11,6 +11,8 @@ import MainCard from "./components/MainCard";
   /*import SingleCard from "./components/SingleCard";*/
 }
 import InfoSection from "./components/InfoSection";
+import PromoSection from "./components/PromoSection";
+import GetExclusive from "./components/GetExclusive";
 import Footer from "./components/Footer";
 import "./index.css";
 
@@ -25,8 +27,10 @@ const App = () => {
       <DescriptionCard />
       <MainCard />
       <InfoSection />
+      <GetExclusive />
       <CardCarousel />
       {/*<SingleCard /> */}
+      {/*<PromoSection /> */}
       <Footer />
     </div>
   );

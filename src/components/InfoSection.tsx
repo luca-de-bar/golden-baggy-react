@@ -8,13 +8,13 @@ const InfoSection: React.FC = () => {
         <div className="hidden lg:grid lg:grid-cols-2 lg:gap-8">
           {/* First Row: Text 1 and Image 1 */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-4">Ci presentiamo...</h2>
+            <h2 className="text-xl font-semibold mb-4">Title 1</h2>
             <p className="text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio nec sapien dapibus blandit. Nulla facilisi. Integer sed sem ut justo egestas convallis
               <strong>
                 <em>
                   <a href="#" className="text-blue-500 hover:underline">
-                    Scopri di più
+                    Link for CTA
                   </a>
                 </em>
               </strong>

@@ -5,7 +5,7 @@ import { Drawer, DrawerContent, DrawerFooter, DrawerTrigger, DrawerTitle, Drawer
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const CardCarousel: React.FC = () => (
-  <div className="flex justify-center mt-8">
+  <div className="flex justify-center mt-8 px-4">
     <Carousel
       opts={{
         align: "start",
@@ -33,7 +33,6 @@ const MainCard: React.FC = () => {
   return (
     <div className="flex flex-col items-center mt-8">
       <div className="w-full max-w-xs p-4 bg-white shadow-lg rounded-lg h-96 shadow-black/50">
-        {" "}
         {/* Rectangular Card */}
         {/* Placeholder for the image */}
       </div>
@@ -46,7 +45,6 @@ const MainCard: React.FC = () => {
             </Button>
           </DrawerTrigger>
           <DrawerContent className="bg-black text-white">
-            {" "}
             {/* Drawer with black background */}
             <div className="flex flex-col justify-center items-center">
               <DrawerTitle>Main Item Carousel</DrawerTitle>
@@ -67,6 +65,13 @@ const MainCard: React.FC = () => {
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
+      </div>
+      {/* New Title and Description Section */}
+      <div className="mt-12 text-center max-w-md">
+        <h2 className="text-lg font-semibold mb-2">Main Item Description</h2>
+        <p className="text-gray-700">
+          This is a brief description of the main item displayed in the card above. It provides additional details about the item, its features, and any other relevant information.
+        </p>
       </div>
     </div>
   );
