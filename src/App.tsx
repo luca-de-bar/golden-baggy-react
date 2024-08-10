@@ -8,6 +8,7 @@ import InfoStrip from "./components/InfoStrip";
 import { CarouselSize } from "./components/CardCarousel";
 import MainCard from "./components/MainCard";
 import SingleCard from "./components/SingleCard";
+import Footer from "./components/Footer";
 import "./index.css";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <MainCard />
       <CarouselSize />
       <SingleCard />
+      <Footer />
     </div>
   );
 };
