@@ -7,7 +7,10 @@ import DescriptionCard from "./components/DescriptionCard";
 import InfoStrip from "./components/InfoStrip";
 import { CarouselSize } from "./components/CardCarousel";
 import MainCard from "./components/MainCard";
-import SingleCard from "./components/SingleCard";
+{
+  /*import SingleCard from "./components/SingleCard";*/
+}
+import InfoSection from "./components/InfoSection";
 import Footer from "./components/Footer";
 import "./index.css";
 
@@ -22,7 +25,8 @@ const App = () => {
       <DescriptionCard />
       <MainCard />
       <CarouselSize />
-      <SingleCard />
+      {/*<SingleCard /> */}
+      <InfoSection />
       <Footer />
     </div>
   );

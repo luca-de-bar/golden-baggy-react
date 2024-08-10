@@ -9,6 +9,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-lg font-semibold mb-4">Social</h3>
             <div className="flex space-x-4">
+              {/*I didn't found any svg icon for the social in my icon pack.. i used Heroicons, try find some svg in the same style of the pack*/}
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6">
                   <path
