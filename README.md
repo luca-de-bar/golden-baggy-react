@@ -8,20 +8,51 @@
 ## Project Structure:
 The project is organized as follows:
 
-Golden Baggy/
-├── node_modules/
-├── public/
-│ └── ...
-├── src/
-│ ├── components/
-│ │ ├── ui/
-│ │ └── ...
-│ ├── App.tsx
-│ ├── main.tsx
-│ ├── index.css
-│ ├── reset.css
-│ └── ...
-└── ...
+|   .eslintrc.cjs
+|   .gitignore
+|   components.json
+|   index.html
+|   package-lock.json
+|   package.json
+|   postcss.config.js
+|   README.md
+|   tailwind.config.js
+|   tsconfig.app.json
+|   tsconfig.json
+|   tsconfig.node.json
+|   vite.config.ts
+|
++---public
+\---src
+    |   App.css
+    |   App.tsx
+    |   index.css
+    |   main.tsx
+    |   reset.css
+    |   vite-env.d.ts
+    |
+    +---components
+    |   |   CardCarousel.tsx
+    |   |   Carousel.css
+    |   |   Carousel.tsx
+    |   |   InfoStrip.tsx
+    |   |   MainItem.tsx
+    |   |   Navbar.tsx
+    |   |
+    |   \---ui
+    |           BaggyButton.tsx
+    |           button.jsx
+    |           button.tsx
+    |           card.jsx
+    |           card.tsx
+    |           carousel.jsx
+    |           carousel.tsx
+    |           dialog.tsx
+    |           drawer.tsx
+    |           navigation-menu.jsx
+    |
+    \---lib
+            utils.ts
 
 
 ## Explanation:
