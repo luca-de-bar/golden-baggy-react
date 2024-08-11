@@ -7,7 +7,7 @@ This `readme.md` contains documentation for components that are more challenging
 It does NOT contain documentation for all components created, however there is a dedicated annotated section in each component that explains in detail how the specific component works.
 
 ## Project Preview
-This project is hosted on Github Pages at [THIS](https://github.com/luca-de-bar/golden-baggy-react) link.
+This project is hosted on Github Pages at [THIS](https://luca-de-bar.github.io/golden-baggy-react/) link.
 
 ## Project Dependencies
 - Vite + React + Typescript
