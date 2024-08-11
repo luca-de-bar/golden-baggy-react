@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import "./DrawerButton.css";
 import Cart from "./Cart";
 import { Drawer, DrawerContent, DrawerTrigger, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
-
 
 /*
   WHAT IT DOES:
@@ -66,6 +64,12 @@ const DrawerButton: React.FC<{
   buttonText?: string; // Text for the button
   buttonClassName?: string; // Custom className for the button
 }> = ({ title, description, images, price, sizes, buttonText = "View Details", buttonClassName = "" }) => {
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
+
+  const handleSizeClick = (size: string) => {
+    setSelectedSize((prevSize) => (prevSize === size ? null : size));
+  };
+
   return (
     <Drawer>
       <DrawerTrigger asChild>
@@ -88,7 +92,14 @@ const DrawerButton: React.FC<{
             <h4 className="text-lg font-medium text-gray-600 text-center">Select Size:</h4>
             <div className="flex justify-center flex-wrap gap-3 mt-3">
               {sizes.map((size, index) => (
-                <Button key={index} variant="outline" className="px-5 py-3 border border-gray-300 rounded-lg text-gray-800 hover:bg-gray-900 hover:text-white transition-colors">
+                <Button
+                  key={index}
+                  variant="outline"
+                  className={`px-5 py-3 border border-gray-300 rounded-lg text-gray-800 transition-colors ${
+                    selectedSize === size ? "bg-gray-900 text-white" : "hover:bg-gray-900 hover:text-white"
+                  }`}
+                  onClick={() => handleSizeClick(size)}
+                >
                   {size}
                 </Button>
               ))}
