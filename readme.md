@@ -105,5 +105,35 @@ import CardColumns from './CardColumns';
 <MisteryBox />
 ```
 
+## 5. MainCard
+
+The `MainCard` component is designed as a visually engaging feature section that highlights a key product or item. It is designed for landing pages or any section where you want to emphasize a particular product with a dynamic and interactive presentation.
+
+### What It Does:
+- **Main Feature Display**: The component showcases a product with a looping video background, a title, and a call-to-action button.
+- **Interactive Drawer**: A `DrawerButton` is used to provide more details about the product. When clicked, it opens a drawer that reveals additional images, product information, available sizes, and pricing.
+- **Product Description**: Below the main product card, there is a brief description area to further highlight the product's features and benefits.
+
+### How It Works:
+- **Video Background**: The component features a video that automatically plays in the background, setting the tone for the product being highlighted. This video is muted, loops, and covers the full width and height of the section.
+- **Product Card**: The main product card is centrally positioned with the title "ARISE". This card serves as the focal point of the section.
+- **Drawer Interaction**: The `DrawerButton` component opens a detailed view in a drawer, showcasing the product's images, description, price, and size options.
+- **Customization**: The `DrawerButton` props (`title`, `description`, `images`, `price`, `sizes`) can be easily customized to reflect different products.
+
+### How to Use:
+- **Ideal Placement**: This component is ideal for use on a landing page or in any section where you want to prominently feature a product.
+- **Customization**: Customize the `DrawerButton` with different product details to feature various products. Update the video source in the `<video>` tag to reflect the appropriate background video for your product.
+  
+### Usage:
+```jsx
+<MainCard />
+```
+This will render a hero section with a video background, a product card, and a button that opens a drawer with more product details.
+
+### Dependencies
+ - **DrawerButton** : This component is dependent on the `DrawerButton` component for the interactive drawer functionality.
+ - **VideoFile** : Ensure that the video file for the background is available at the specified path or adjust the `src` attribute in the video tag accordingly.
+
+
 
 
