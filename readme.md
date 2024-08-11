@@ -58,7 +58,7 @@ const items = [
     title: "Envy",
     description: "Rise from the ashes with this new brand look",
     images: [
-      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+1", //This one will be the main product image, just change the order of the image array to display another one
       "https://via.placeholder.com/300x400.png?text=Image+2",
       "https://via.placeholder.com/300x400.png?text=Image+3",
     ],
