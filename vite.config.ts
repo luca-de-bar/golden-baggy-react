@@ -9,5 +9,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/golden-baggy-react/',  // Sostituisci 'golden-baggy-v2' con il nome del tuo repository
+  base: '/golden-baggy-react-components/',
 });
