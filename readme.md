@@ -18,6 +18,8 @@ A wrapper component that transforms any enclosed elements into a fully functioni
 
 **Usage:**
 ```jsx
+import Cart from "./Cart";
+
 <Cart>
   <Button>Add to Cart</Button>
 </Cart>
@@ -31,6 +33,8 @@ Default Text for the button is "View Details" you can change it by providing som
 
 **Usage:**
 ```jsx
+import DrawerButton from "./DrawerButton";
+
 <DrawerButton
   title="Product Name"
   description="Product Description"
