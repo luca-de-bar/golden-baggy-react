@@ -2,16 +2,120 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import DrawerButton from "./DrawerButton";
 import "./CardCarousel.css";
 
-const words = ["Arise V2", "Phoenix", "Dark Matter", "Vanity", "Pegasus", "Acedia", "Envy"];
-
-  const images = [
-    "https://via.placeholder.com/300x400.png?text=Image+1",
-    "https://via.placeholder.com/300x400.png?text=Image+2",
-    "https://via.placeholder.com/300x400.png?text=Image+3",
-    "https://via.placeholder.com/300x400.png?text=Image+4",
-    "https://via.placeholder.com/300x400.png?text=Image+5",
-    "https://via.placeholder.com/300x400.png?text=Image+6",
-  ];
+const items = [
+  {
+    title: "Envy",
+    description: "Rise from the ashes with this new brand look",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+3",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$99.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    title: "Phoenix",
+    description: "Reborn from the flames",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+2", // Questa è l'immagine principale
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+3",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$109.99",
+    sizes: ["S", "M", "L"],
+  },
+  {
+    title: "Vanity",
+    description: "The essence of the universe in your style",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+3", // Questa è l'immagine principale
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$119.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    title: "Acedia",
+    description: "The essence of the universe in your style",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+3", // Questa è l'immagine principale
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$119.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    title: "Pegasus",
+    description: "The essence of the universe in your style",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+3", // Questa è l'immagine principale
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$119.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    title: "Arise Recolor",
+    description: "The essence of the universe in your style",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+3", // Questa è l'immagine principale
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$119.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    title: "Seraph",
+    description: "Rise from the ashes with this new brand look",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+3",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$99.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+  {
+    title: "Lust",
+    description: "Rise from the ashes with this new brand look",
+    images: [
+      "https://via.placeholder.com/300x400.png?text=Image+1",
+      "https://via.placeholder.com/300x400.png?text=Image+2",
+      "https://via.placeholder.com/300x400.png?text=Image+3",
+      "https://via.placeholder.com/300x400.png?text=Image+4",
+      "https://via.placeholder.com/300x400.png?text=Image+5",
+      "https://via.placeholder.com/300x400.png?text=Image+6",
+    ],
+    price: "$99.99",
+    sizes: ["S", "M", "L", "XL"],
+  },
+];
 
 export function CardCarousel() {
   return (
@@ -23,21 +127,27 @@ export function CardCarousel() {
         className="w-full max-w-[90rem]"
       >
         <CarouselContent className="flex">
-          {Array.from({ length: 15 }).map((_, index) => (
+          {items.map((item, index) => (
             <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/5 p-2">
               <div className="card-container w-full p-3 bg-gray-200 shadow-md rounded-lg shadow-black/30">
                 <div className="card-content p-4 sm:p-6">
-                  <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-black">{index + 1}</span>
+                  <img
+                    src={item.images[0]} // Mostra l'immagine principale
+                    alt={item.title}
+                    className="object-cover w-full h-auto rounded-lg"
+                  />
                 </div>
               </div>
               <div className="p-4 flex flex-col justify-between items-center">
-                <h3 className="text-xl font-medium mb-2 text-center">{words[index % words.length]}</h3>
+                <h3 className="text-xl font-medium mb-2 text-center">{item.title}</h3>
                 <DrawerButton
-                  title="Product Name"
-                  description="This is a detailed description of the product."
-                  images={images} // Numero di card determinato dalla lunghezza di questo array
-                  price="$99.99"
-                  sizes={["S", "M", "L", "XL"]}
+                  title={item.title}
+                  description={item.description}
+                  images={item.images}
+                  price={item.price}
+                  sizes={item.sizes}
+                  buttonText="View Details"
+                  buttonClassName=""
                 />
               </div>
             </CarouselItem>

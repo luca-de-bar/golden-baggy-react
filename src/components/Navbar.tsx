@@ -79,16 +79,7 @@ const Navbar = () => {
                 Home
               </a>
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                Exclusive
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                LookBook
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                Wishlist
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                GoldenBaggy World
+                Shop
               </a>
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Collab
@@ -98,6 +89,9 @@ const Navbar = () => {
               </a>
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Contact
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                Exclusive
               </a>
             </div>
 
@@ -140,18 +134,6 @@ const Navbar = () => {
             Home
           </a>
           <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-            Exclusive
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-            LookBook
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-            Wishlist
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-            GoldenBaggy World
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Collab
           </a>
           <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
@@ -159,6 +141,9 @@ const Navbar = () => {
           </a>
           <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Contact
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            Exclusive
           </a>
         </div>
       </div>
