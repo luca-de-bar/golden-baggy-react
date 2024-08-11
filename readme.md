@@ -83,13 +83,9 @@ The `CardColumns` component creates two Cards Columns with a glitch effect.
 - Each card is displayed as a rectangular box with an SVG icon in the center.
 - When a user hovers over a card, the SVG icon fades out, revealing a glitch text effect that showcases the `glitchText` value.
 - The glitch effect is managed by the CSS class `glitch` within `CardColumns.css`.
-- The `MisteryBox` component demonstrates the usage of `CardColumns` by passing an array of card data, determining the content and behavior of the cards.
 - The `CardColumns.css` file handles the styling of the glitch effect, transition animations, and the overall appearance of the cards.
-
-**Usage:**
+- The `MisteryBox` component demonstrates the usage of `CardColumns` by passing an array of card data, determining the content and behavior of the cards.
 ```jsx
-import CardColumns from './CardColumns';
-
 const cards = [
   { id: 1, content: "Card 1", glitchText: "ARISE" },
   { id: 2, content: "Card 2", glitchText: "PHOENIX" },
@@ -98,6 +94,12 @@ const cards = [
   { id: 5, content: "Card 5", glitchText: "ACEDIA" },
   { id: 6, content: "Card 6", glitchText: "PEGASUS" },
 ];
+```
+**Usage:**
+```jsx
+import CardColumns from './CardColumns';
+
+<MisteryBox />
 ```
 
 
