@@ -52,11 +52,7 @@ The `CardCarousel` component dynamically generates a responsive carousel of prod
 - The main image from each product's `images` array is displayed on the card. The first image in the array is used as the primary display image.
 - Each card includes a `DrawerButton`, which when clicked, opens a drawer with detailed information about the product provided in the items array. See DrawerButton documentation to fully understand how this component works.
 - The length of the carousel in each drawer is determined by the number of images in the `images` array.
-
-**Usage:**
 ```jsx
-import { CardCarousel } from './CardCarousel';
-
 const items = [
   {
     title: "Envy",
@@ -72,6 +68,13 @@ const items = [
   // Additional items...
 ];
 ```
+**Usage:**
+```jsx
+import { CardCarousel } from './CardCarousel';
+
+<CardCarousel />
+```
+
 
 ### 4. `CardColumns`
 
