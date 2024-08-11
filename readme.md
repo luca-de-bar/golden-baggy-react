@@ -71,10 +71,6 @@ const items = [
   },
   // Additional items...
 ];
-
-export function App() {
-  return <CardCarousel items={items} />;
-}
 ```
 
 ### 4. `CardColumns`
@@ -102,10 +98,6 @@ const cards = [
   { id: 5, content: "Card 5", glitchText: "ACEDIA" },
   { id: 6, content: "Card 6", glitchText: "PEGASUS" },
 ];
-
-export function App() {
-  return <CardColumns cards={cards} />;
-}
 ```
 
 
