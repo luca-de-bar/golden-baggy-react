@@ -2,6 +2,11 @@
 
 This repository contains a set of responsive React components built with Tailwind CSS. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes.
 
+## Project Dependencies
+- Vite + React + Typescript
+- Shadcnui components
+- TailwindCSS
+
 ## Components
 
 ### 1. `Cart`
@@ -35,7 +40,7 @@ Default Text for the button is "View Details" you can change it by providing som
 
 ### 3. `CardCarousel`
 
-The `CardCarousel` component dynamically generates a responsive carousel of product cards. Each card displays a product's main image and title, with a button that opens a detailed view in a drawer. This component is perfect for showcasing multiple products in a visually appealing, interactive format.
+The `CardCarousel` component dynamically generates a responsive carousel of product cards. Each card displays a product's main image and title, with a button that opens a detailed view in a drawer.
 
 **Dependencies:**
 - `Carousel`, `CarouselContent`, `CarouselItem`, `CarouselNext`, `CarouselPrevious` from `@/components/ui/carousel` (installed with shadcnui)
@@ -69,6 +74,37 @@ const items = [
 
 export function App() {
   return <CardCarousel items={items} />;
+}
+```
+
+### 4. `CardColumns`
+
+The `CardColumns` component creates two Cards Columns with a glitch effect.
+
+**How It Works:**
+- The component accepts an array of card objects as a prop. Each card object contains an `id`, `content`, and `glitchText`.
+- The cards are split into two columns: the left column and the right column. If the number of cards is even, the left column will be longer.
+- Each card is displayed as a rectangular box with an SVG icon in the center.
+- When a user hovers over a card, the SVG icon fades out, revealing a glitch text effect that showcases the `glitchText` value.
+- The glitch effect is managed by the CSS class `glitch` within `CardColumns.css`.
+- The `MisteryBox` component demonstrates the usage of `CardColumns` by passing an array of card data, determining the content and behavior of the cards.
+- The `CardColumns.css` file handles the styling of the glitch effect, transition animations, and the overall appearance of the cards.
+
+**Usage:**
+```jsx
+import CardColumns from './CardColumns';
+
+const cards = [
+  { id: 1, content: "Card 1", glitchText: "ARISE" },
+  { id: 2, content: "Card 2", glitchText: "PHOENIX" },
+  { id: 3, content: "Card 3", glitchText: "VANITY" },
+  { id: 4, content: "Card 4", glitchText: "ENVY" },
+  { id: 5, content: "Card 5", glitchText: "ACEDIA" },
+  { id: 6, content: "Card 6", glitchText: "PEGASUS" },
+];
+
+export function App() {
+  return <CardColumns cards={cards} />;
 }
 ```
 
