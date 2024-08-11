@@ -6,11 +6,7 @@ interface BaggyButtonProps extends ButtonProps {
 }
 
 const BaggyButton: React.FC<BaggyButtonProps> = ({ children, className, ...props }) => (
-  <Button 
-    variant="outline" 
-    className={`px-8 hover:bg-slate-200 hover:border-purple-400 hover:text-slate-950 ${className}`} 
-    {...props}
-  >
+  <Button variant="outline" className={`px-8 hover:bg-slate-200 hover:border-purple-400 hover:text-slate-950 ${className}`} {...props}>
     {children}
   </Button>
 );

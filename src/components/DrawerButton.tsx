@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import './DrawerButton.css'
+import "./DrawerButton.css";
+import Cart from "./Cart";
 import { Drawer, DrawerContent, DrawerTrigger, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -38,11 +39,13 @@ const DrawerButton: React.FC<{
   images: string[];
   price: string;
   sizes: string[];
-}> = ({ title, description, images, price, sizes }) => {
+  buttonText?: string; // Text for the button
+  buttonClassName?: string; // Custom className for the button
+}> = ({ title, description, images, price, sizes, buttonText = "View Details", buttonClassName = "" }) => {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button className="text-white bg-gray-800 hover:bg-gray-900 mt-4 py-2 px-6 rounded-lg">View Details</Button>
+        <Button className={`text-white bg-gray-800 hover:bg-gray-900 mt-4 py-2 px-6 rounded-lg ${buttonClassName}`}>{buttonText}</Button>
       </DrawerTrigger>
       <DrawerContent className="bg-white text-black p-6 w-full">
         <DrawerClose asChild>
@@ -68,7 +71,9 @@ const DrawerButton: React.FC<{
             </div>
           </div>
           <div className="mt-8 flex justify-center w-full">
-            <Button className="bg-gray-900 text-white py-3 px-8 rounded-lg hover:bg-gray-700 transition duration-300 shadow-md">Add to Cart</Button>
+            <Cart>
+              <Button className="bg-gray-900 text-white py-3 px-8 rounded-lg hover:bg-gray-700 transition duration-300 shadow-md">Add to Cart</Button>
+            </Cart>
           </div>
         </div>
       </DrawerContent>
