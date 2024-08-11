@@ -1,8 +1,17 @@
-import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import DrawerButton from "./DrawerButton";
 import "./CardCarousel.css";
 
 const words = ["Arise V2", "Phoenix", "Dark Matter", "Vanity", "Pegasus", "Acedia", "Envy"];
+
+  const images = [
+    "https://via.placeholder.com/300x400.png?text=Image+1",
+    "https://via.placeholder.com/300x400.png?text=Image+2",
+    "https://via.placeholder.com/300x400.png?text=Image+3",
+    "https://via.placeholder.com/300x400.png?text=Image+4",
+    "https://via.placeholder.com/300x400.png?text=Image+5",
+    "https://via.placeholder.com/300x400.png?text=Image+6",
+  ];
 
 export function CardCarousel() {
   return (
@@ -11,7 +20,7 @@ export function CardCarousel() {
         opts={{
           align: "start",
         }}
-        className="w-full max-w-[110rem]"
+        className="w-full max-w-[90rem]"
       >
         <CarouselContent className="flex">
           {Array.from({ length: 15 }).map((_, index) => (
@@ -23,9 +32,13 @@ export function CardCarousel() {
               </div>
               <div className="p-4 flex flex-col justify-between items-center">
                 <h3 className="text-xl font-medium mb-2 text-center">{words[index % words.length]}</h3>
-                <Button variant="outline" className="btn btnshop">
-                  + Details
-                </Button>
+                <DrawerButton
+                  title="Product Name"
+                  description="This is a detailed description of the product."
+                  images={images} // Numero di card determinato dalla lunghezza di questo array
+                  price="$99.99"
+                  sizes={["S", "M", "L", "XL"]}
+                />
               </div>
             </CarouselItem>
           ))}

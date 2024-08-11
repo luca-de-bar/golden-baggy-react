@@ -1,0 +1,5 @@
+@media (max-width: 450px) {
+  .carousel-item {
+    flex-basis: 100% !important;
+  }
+}
