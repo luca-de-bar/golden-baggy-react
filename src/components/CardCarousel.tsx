@@ -2,6 +2,25 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import DrawerButton from "./DrawerButton";
 import "./CardCarousel.css";
 
+
+{
+  /*
+  DEPENDENCIES:
+  - `Carousel`, `CarouselContent`, `CarouselItem`, `CarouselNext`, `CarouselPrevious` from "@/components/ui/carousel installed with shadcnui"
+  - `DrawerButton` from "./DrawerButton"
+  - Custom CSS from `CardCarousel.css`
+
+  HOW IT WORKS:
+  - The component dynamically generates each card from an `items` array, which contains product details like title, description, images, price, and sizes.
+  - Each card shows the main image from the product's image array and the product title, simply put the image as first in the array to be the one for the main card.
+  - Below the image, a `DrawerButton` opens a Drawer with the items.title, items.description, items.images, items.price and items.sizes. Simply change the array to change details for a specific product
+  - The carousel is navigable using `CarouselNext` and `CarouselPrevious` components, which provide controls to move between the product cards.
+  - The Carousel lenght inside the DrawerButton, is controlled by the number of images in the items.images array.
+*/
+}
+
+
+
 const items = [
   {
     title: "Envy",
