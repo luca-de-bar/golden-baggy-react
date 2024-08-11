@@ -3,7 +3,7 @@
 This repository contains a set of responsive React components built with Tailwind CSS and ShadcnUI. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes.
 
 Please note : 
-- This `readme.md` contains documentation for components that are more challenging to understand since they are mostly custom for this project.
+This `readme.md` contains documentation for components that are more challenging to understand since they are mostly custom for this project.
 It does NOT contain documentation for all components created, however there is a dedicated annotated section in each component that explains in detail how the specific component works.
 
 ## Project Dependencies
