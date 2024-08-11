@@ -1,6 +1,23 @@
 import React from "react";
 import "./CardColumns.css"
 
+{
+  /*
+  DEPENDENCIES:
+  - Custom CSS from `CardColumns.css` for styling and glitch effect.
+  
+  HOW IT WORKS:
+  - The `CardColumns` component takes an array of card objects as a prop. Each card object contains an `id`, `content`, and `glitchText`.
+  - The cards are split into two columns: the left column and the right column, if the number of card is even the left column will be longer
+  - Each card is displayed as a rectangular box with an SVG icon in the center.
+  - When a user hovers over a card, the SVG icon fades out and a glitch text effect appears, showcasing the `glitchText` value.
+  - The glitch effect is controlled by the CSS class `glitch` within `CardColumns.css`.
+  - The `MisteryBox` component demonstrates how to use `CardColumns` by passing an array of card data. This array determines the content and behavior of the cards.
+  - The `CardColumns.css` file is responsible for the styling of the glitch effect, the transition animations, and the overall appearance of the cards.
+  */
+}
+
+
 type Card = {
   id: number;
   content: string;

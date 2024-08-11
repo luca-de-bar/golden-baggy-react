@@ -1,6 +1,30 @@
 import { useState } from "react";
 import Cart from "./Cart";
 
+
+/*
+  WHAT IT DOES:
+  - The `Navbar` component is a responsive navigation bar that adapts to both mobile and desktop layouts.
+  - It includes navigation links, social icons, and an interactive cart component integrated directly into the navigation bar.
+
+  HOW IT WORKS:
+  - On desktop, the navigation links are displayed horizontally in the center, with social icons and the cart icon on the right.
+  - On mobile, a hamburger menu is displayed that toggles a dropdown menu for navigation links.
+  - The `Cart` component is integrated within the navbar, allowing users to access the shopping cart directly from the navigation.
+  - The `isOpen` state controls the visibility of the mobile dropdown menu, which is toggled by the hamburger button.
+
+  HOW TO USE:
+  - Customize the links and icons to fit your site's navigation needs.
+  - Replace the `Logo` text with your actual logo or brand name.
+  - The cart icon integrates with the `Cart` component, so ensure that the `Cart` component is correctly configured and imported.
+
+  EXAMPLE:
+
+    <Navbar />
+
+  - This will render the navigation bar with responsive design and integrated cart functionality.
+*/
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

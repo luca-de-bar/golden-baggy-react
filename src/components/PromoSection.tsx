@@ -1,3 +1,22 @@
+/*
+  WHAT IT DOES:
+  - The `PromoSection` component is a promotional banner designed to highlight a special offer or sale on your website.
+
+  HOW IT WORKS:
+  - The component displays a bold headline, a brief promotional message, and a call-to-action (CTA) button that encourages users to shop.
+  - The background is styled with a gradient, transitioning from a lighter to a darker blue, enhancing the visual appeal.
+  - The layout is responsive, with the text and button stacking vertically on smaller screens and aligning side-by-side on larger screens.
+
+  HOW TO USE:
+  - Include the `PromoSection` component in any page where you want to promote a sale or special offer.
+  - Customize the headline, description, and CTA link and text to match the specific promotion.
+
+  EXAMPLE:
+
+    <PromoSection />
+    
+  - This will render a promotional section with a gradient background, promotional text, and a "Shop Now" button.
+*/
 const PromoSection: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4 sm:px-6 lg:px-8">

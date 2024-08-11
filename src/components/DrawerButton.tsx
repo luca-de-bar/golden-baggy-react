@@ -5,6 +5,30 @@ import Cart from "./Cart";
 import { Drawer, DrawerContent, DrawerTrigger, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
+
+
+/*
+  WHAT IT DOES:
+  - `DrawerButton` is a versatile component that triggers a drawer containing detailed product information. When clicked, it opens a customizable drawer where users can view product details, browse images in a carousel, select sizes, and add the item to a cart.
+
+  HOW TO USE:
+  - The `DrawerButton` component accepts props for product details such as `title`, `description`, `images`, `price`, and `sizes`.
+  - It also allows customization of the button text through the `buttonText` prop and additional styling via the `buttonClassName` prop.
+  - When used, clicking the button opens a drawer displaying the product information passed as props.
+
+  EXAMPLE:
+  <DrawerButton
+    title="Phoenix"
+    description="Reborn from the flames"
+    images={["image1.jpg", "image2.jpg", "image3.jpg"]}
+    price="$99.99"
+    sizes={["S", "M", "L", "XL"]}
+    buttonText="Learn More"
+    buttonClassName="custom-tailwindCSS-class"
+/>
+- In this example, the button will say "Learn More" and will open a drawer with the specified product details.
+*/
+
 const CardCarousel: React.FC<{ images: string[] }> = ({ images }) => (
   <div className="flex justify-center mt-8 px-4">
     <Carousel

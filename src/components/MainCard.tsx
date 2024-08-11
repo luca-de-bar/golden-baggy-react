@@ -1,6 +1,27 @@
 import React from "react";
 import DrawerButton from "./DrawerButton";
 
+/*
+  WHAT IT DOES:
+  - The `MainCard` component is a visually engaging feature section that highlights a main product or item, complete with a video background, product details, and a call-to-action button.
+
+  HOW IT WORKS:
+  - The component displays a video background that loops and plays automatically, setting the tone for the featured product.
+  - The central product card is displayed with a title ("ARISE"), and a `DrawerButton` that allows users to explore more details about the product.
+  - The `DrawerButton` opens a drawer when clicked, showing more images and information about the product, including available sizes and price.
+  - The content below the card provides a brief description of the product, emphasizing its features and encouraging user engagement.
+
+  HOW TO USE:
+  - This component is ideal for a landing page or a section where a key product needs to be highlighted.
+  - Customize the `DrawerButton` props to reflect different product details, images, and pricing.
+  - Ensure the video file used for the background is available at the specified path or adjust the `src` attribute accordingly.
+
+  EXAMPLE:
+  <MainCard />
+  
+  - This will render a hero section with a video background, a product card, and a button that opens a drawer with more product details.
+*/
+
   const images = [
     "https://via.placeholder.com/300x400.png?text=Image+1",
     "https://via.placeholder.com/300x400.png?text=Image+2",

@@ -12,10 +12,6 @@ import InfoStrip from "./components/InfoStrip";
 import { CardCarousel } from "./components/CardCarousel";
 import MainCard from "./components/MainCard";
 {
-  /*import Cart from "./components/Cart"; */
-}
-
-{
   /*import SingleCard from "./components/SingleCard";*/
 }
 import InfoSection from "./components/InfoSection";
@@ -48,7 +44,6 @@ const App = () => {
       {/*<PromoSection />*/}
       <NewsletterCTA />
       <Footer />
-      {/*<Cart />*/}
     </div>
   );
 };

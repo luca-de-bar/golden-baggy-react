@@ -1,5 +1,16 @@
 import React from "react";
+/*
+  WHAT IT DOES:
+  - The `DescriptionCard` component displays a styled card with a background and an overlay containing a title and a brief description.
 
+  HOW TO USE:
+  - Simply render the `DescriptionCard` component to display a card with a title and description. It is centered and responsive, adjusting its size based on the screen width.
+
+  EXAMPLE:
+
+    <DescriptionCard />
+    
+*/
 const DescriptionCard: React.FC = () => {
   return (
     <div className="flex flex-col items-center bg-gray-100 p-8">

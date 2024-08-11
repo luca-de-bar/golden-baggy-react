@@ -1,5 +1,24 @@
 import React from "react";
 
+
+/*
+  WHAT IT DOES:
+  - The `Footer` component creates a responsive footer section, designed to include social media links, contact information, and legal details.
+
+  HOW TO USE:
+  - Place the `Footer` component at the bottom of your page to display a footer with three main sections: Social, Contacts, and Legal Info.
+  - The social media icons are included as SVGs with links to Instagram, Facebook, YouTube, and TikTok. These links open in a new tab.
+  - Contact information includes an email address and a WhatsApp number, both of which are clickable.
+  - Legal information displays a VAT number, copyright notice, and placeholder text for "Terms and Conditions" and "Privacy Policy."
+
+  EXAMPLE:
+
+   <Footer />
+   
+  - This will render the footer with the default content. You can customize the links and text as needed.
+*/
+
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-950 text-white py-8">

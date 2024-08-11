@@ -1,3 +1,19 @@
+/*
+  WHAT IT DOES:
+  - The `HeroBanner` component creates a full-width hero section typically placed at the top of a webpage.
+  - It includes a background image, a dark overlay, and centered text content with a call-to-action button.
+
+  HOW TO USE:
+  - Use the `HeroBanner` component as the introductory section of your webpage to draw attention and guide users towards a key action.
+  - The background image URL can be replaced with your desired image, and the text content (title, description, and button) can be customized.
+
+  EXAMPLE:
+
+    <HeroBanner />
+    
+  - This will render a visually striking banner with a background image, overlaid with a dark filter, and display a title, description, and "Shop Now" button.
+*/
+
 const HeroBanner: React.FC = () => {
   return (
     <div className="relative w-full bg-gray-800 h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">

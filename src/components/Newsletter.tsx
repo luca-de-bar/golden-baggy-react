@@ -1,3 +1,24 @@
+/*
+  WHAT IT DOES:
+  - The `NewsletterCTA` component is a call-to-action section designed to encourage users to subscribe to a newsletter.
+
+  HOW IT WORKS:
+  - The component features a title, a brief description, an email input field, and a subscription button.
+  - The form is styled to be responsive, with the input field and button aligning vertically on mobile devices and horizontally on larger screens.
+  - The email input field includes focus styling to enhance the user experience when interacting with the form.
+  - A small note at the bottom reassures users about privacy and the ability to unsubscribe at any time.
+
+  HOW TO USE:
+  - Place the `NewsletterCTA` component within a page where you want to encourage newsletter signups.
+  - Customize the text content, placeholder, and button label as needed.
+
+  EXAMPLE:
+
+   <NewsletterCTA />
+   
+  - This will render a fully styled newsletter sign-up section on your page.
+*/
+
 const NewsletterCTA: React.FC = () => {
   return (
     <section className="bg-slate-900 text-white py-16 px-4">

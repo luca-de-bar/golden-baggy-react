@@ -1,5 +1,21 @@
 import React from "react";
 
+/*
+  WHAT IT DOES:
+  - The `InfoSection` component displays a section with alternating text and images, providing a flexible layout for presenting information.
+  - The component adapts its layout based on the screen size, showing a different arrangement for desktop, tablet, and mobile views.
+
+  HOW TO USE:
+  - Use `InfoSection` to present key information, promotional content, or features in a responsive format that adjusts to different device sizes.
+  - The component automatically handles the layout based on screen width, so you can place it in any part of your webpage.
+
+  EXAMPLE:
+  
+  <InfoSection />
+
+  - This will render a responsive section with text and images that adjust their positions based on the screen size.
+*/
+
 const InfoSection: React.FC = () => {
   return (
     <div className="bg-gray-100 py-12">

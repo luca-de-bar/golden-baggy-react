@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "./DrawerCart.css";
 
+/*
+  WHAT IT DOES:
+  - `Cart` is a wrapper component that turns any element it wraps into a trigger for a sliding cart drawer. When the element is clicked, the cart drawer opens from the right side of the screen.
+
+  HOW TO USE:
+  - Wrap any element with the `Cart` component to make it a cart trigger.
+  
+  EXAMPLE:
+  <Cart>
+    <button>Open Cart</button>
+  </Cart>
+  
+*/
+
+
 const CartItem: React.FC<{
   name: string;
   price: number;

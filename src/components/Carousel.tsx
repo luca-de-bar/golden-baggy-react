@@ -1,5 +1,18 @@
 import { useState, useEffect, useCallback } from "react";
 
+/*
+  WHAT IT DOES:
+  - The `Carousel` component creates an image carousel that automatically cycles through a set of images with a fade transition. Users can also manually navigate between images.
+
+  HOW TO USE:
+  - Define an array of image URLs and the component will automatically display them in a rotating carousel. Navigation buttons allow manual control.
+
+  EXAMPLE:
+  <Carousel />
+  
+*/
+
+
 const images = [
   "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://plus.unsplash.com/premium_photo-1708110920881-635419c3411f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
