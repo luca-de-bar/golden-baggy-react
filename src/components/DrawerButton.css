@@ -1,5 +1,11 @@
 @media (max-width: 450px) {
   .carousel-item {
-    flex-basis: 100% !important;
+    flex-basis: 70% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .drawer-content {
+    padding-top: 1px !important;
   }
 }

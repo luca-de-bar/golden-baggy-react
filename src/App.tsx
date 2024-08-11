@@ -15,10 +15,8 @@ import MainCard from "./components/MainCard";
   /*import SingleCard from "./components/SingleCard";*/
 }
 import InfoSection from "./components/InfoSection";
-{
-  /*import PromoSection from "./components/PromoSection";*/
-}
 import GetExclusive from "./components/GetExclusive";
+import PromoSection from "./components/PromoSection";
 import NewsletterCTA from "./components/Newsletter";
 import HeroBanner from "./components/Herobanner";
 import MisteryBox from "./components/CardColumns"
@@ -39,9 +37,9 @@ const App = () => {
       <GetExclusive />
       <CardCarousel />
       <InfoSection />
+      <PromoSection />
       <MisteryBox />
       {/*<SingleCard /> */}
-      {/*<PromoSection />*/}
       <NewsletterCTA />
       <Footer />
     </div>
