@@ -1,9 +1,9 @@
-# Responsive React Components for Golden Baggy project (feel free to use)
+# Responsive React Components
 
-This repository contains a set of responsive React components built with Tailwind CSS and ShadcnUI. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes.
+This repository contains a set of responsive React components built with Tailwind CSS and ShadcnUI. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes, however, if you intend to use these components in your project you will need to implement CSS changes to reflect those.
 
 Please note : 
-This `readme.md` contains documentation for components that are more challenging to understand since they are mostly custom for this project.
+This `readme.md` contains documentation for components that are more challenging to understand since they are mostly custom for this project or they function through the combination of several components.
 It does NOT contain documentation for all components created, however there is a dedicated annotated section in each component that explains in detail how the specific component works.
 
 ## Project Preview
