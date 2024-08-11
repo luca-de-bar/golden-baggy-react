@@ -36,7 +36,7 @@ const MainCard: React.FC = () => {
     <div className="relative w-full overflow-hidden pt-16">
       {/* Video Background */}
       <video className="absolute top-0 left-0 w-full h-full object-cover -z-10" autoPlay loop muted playsInline>
-        <source src="/MainCardLoopVideo.mp4" type="video/mp4" />
+        <source src="/golden-baggy-react/MainCardLoopVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
