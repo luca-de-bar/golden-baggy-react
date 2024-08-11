@@ -1,6 +1,10 @@
 # Responsive React Components for Golden Baggy project (feel free to use)
 
-This repository contains a set of responsive React components built with Tailwind CSS. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes.
+This repository contains a set of responsive React components built with Tailwind CSS and ShadcnUI. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes.
+
+Please note : 
+- This `readme.md` contains documentation for components that are more challenging to understand since they are mostly custom for this project.
+It does NOT contain documentation for all components created, however there is a dedicated annotated section in each component that explains in detail how the specific component works.
 
 ## Project Dependencies
 - Vite + React + Typescript
@@ -118,7 +122,7 @@ The `MainCard` component is designed as a visually engaging feature section that
 - **Video Background**: The component features a video that automatically plays in the background, setting the tone for the product being highlighted. This video is muted, loops, and covers the full width and height of the section.
 - **Product Card**: The main product card is centrally positioned with the title "ARISE". This card serves as the focal point of the section.
 - **Drawer Interaction**: The `DrawerButton` component opens a detailed view in a drawer, showcasing the product's images, description, price, and size options.
-- **Customization**: The `DrawerButton` props (`title`, `description`, `images`, `price`, `sizes`) can be easily customized to reflect different products.
+- **Customization**: The `DrawerButton` props (`title`, `description`, `images`, `price`, `sizes`) can be easily customized to reflect different products. See DrawerButton documentation for better usage
 
 ### How to Use:
 - **Ideal Placement**: This component is ideal for use on a landing page or in any section where you want to prominently feature a product.
@@ -126,6 +130,8 @@ The `MainCard` component is designed as a visually engaging feature section that
   
 ### Usage:
 ```jsx
+import MainCard from "./components/MainCard";
+
 <MainCard />
 ```
 This will render a hero section with a video background, a product card, and a button that opens a drawer with more product details.
@@ -133,6 +139,48 @@ This will render a hero section with a video background, a product card, and a b
 ### Dependencies
  - **DrawerButton** : This component is dependent on the `DrawerButton` component for the interactive drawer functionality.
  - **VideoFile** : Ensure that the video file for the background is available at the specified path or adjust the `src` attribute in the video tag accordingly.
+
+## 6. InfoStrip
+
+The `InfoStrip` component is a simple way to display important messages or promotional content in a horizontal strip with a marquee effect that scrolls across the screen. This component is particularly useful for highlighting special offers, announcements, or other important information.
+
+### What It Does:
+- **Scrolling Marquee**: The component displays a scrolling marquee that continuously moves text from right to left, ensuring that the message catches the user’s attention.
+- **Customizable Text**: The text within the marquee can be easily customized to display any message or promotional content you want to highlight.
+- **Responsive Design**: The component is responsive, ensuring that the marquee text is displayed properly across different screen sizes.
+
+### How to Use:
+- **Placement**: Include the `InfoStrip` component at the top or bottom of your webpage for maximum visibility. It can be used to inform users of special offers, shipping details, or any other relevant announcements.
+- **Customization**: Modify the text within the marquee to suit your needs. The background color and text color can also be adjusted via the class names.
+
+### Example Usage:
+```jsx
+import InfoStrip from "./components/InfoStrip";
+
+<InfoStrip />
+```
+
+## 7. GetExclusive
+
+The `GetExclusive` component is a promotional section designed to entice users to purchase premium items by offering them access to an exclusive section with unique, limited-edition products.
+
+### What It Does:
+- **Promotional Highlight**: It prominently displays a call-to-action (CTA) that encourages users to shop for premium items to unlock exclusive content.
+- **Customizable Section**: The component includes a title, description, and a CTA button, all of which can be easily customized to fit the specific promotion or campaign.
+- **Visually Engaging**: The section is styled with a dark background and bold, eye-catching text, making it stand out on the page.
+
+### How to Use:
+- **Placement**: Integrate the `GetExclusive` component within your webpage where you want to draw attention to a special offer or promotion.
+- **Customization**: Modify the title, description, and button text to align with your promotional messaging. The URL linked to the CTA button can also be customized to direct users to the relevant section or product page.
+
+### Example Usage:
+```jsx
+import GetExclusive from "./components/GetExclusive";
+
+<GetExclusive />
+```
+
+
 
 
 
