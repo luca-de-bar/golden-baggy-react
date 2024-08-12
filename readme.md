@@ -1,11 +1,8 @@
 # Responsive React Components
 
-This repository contains a set of responsive React components built with Tailwind CSS and ShadcnUI. These components are designed to be easily integrated into any project, offering flexibility and consistent styling across various screen sizes, however, if you intend to use these components in your project you will need to implement CSS changes to reflect those.
+This repository offers a collection of responsive React components using Tailwind CSS and ShadcnUI. These components are designed for easy integration into projects, providing flexible and consistent styling across different screen sizes. Note that you may need to implement CSS changes to fit these components into your project.
 
-Please note : 
-This `readme.md` contains documentation for components that are more challenging to understand since they are mostly custom for this project or they function through the combination of several components.
-It does NOT contain documentation for all components created, however there is a dedicated annotated section in each component that explains in detail how the specific component works.
-
+The documentation in this repository focuses on the more complex, custom components that often function by combining several other components. While not all components are documented here, each component includes an annotated section within its code that explains its functionality in detail.
 ## Project Preview
 This project is hosted on Github Pages at [THIS](https://luca-de-bar.github.io/golden-baggy-react-components/) link.
 
